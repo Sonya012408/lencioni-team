@@ -73,5 +73,55 @@
   "page": "https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg",
   "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
   "lic": "CC BY 3.0"
+ },
+ "napa-logan": {
+  "page": "https://commons.wikimedia.org/wiki/File:Napa_Valley_Photo_Don_Ramey_Logan_.jpg",
+  "artist": "Don Ramey Logan",
+  "lic": "CC BY-SA 3.0"
+ },
+ "kleiner": {
+  "page": "https://commons.wikimedia.org/wiki/File:SVB_Kleiner_Perkins_Menlo_Park_April_2023.jpg",
+  "artist": "King of Hearts",
+  "lic": "CC BY-SA 4.0"
+ },
+ "volleyball": {
+  "page": "https://commons.wikimedia.org/wiki/File:Peru_women_national_volleyball_team_2011GP1.JPG",
+  "artist": "Wongpong",
+  "lic": "CC BY 3.0"
+ },
+ "wtc-search": {
+  "page": "https://commons.wikimedia.org/wiki/File:WTC_search.jpg",
+  "artist": "U.S. Navy photo by Journalist 1st Class Preston Keres.",
+  "lic": "Public domain"
+ },
+ "debate": {
+  "page": "https://commons.wikimedia.org/wiki/File:Scottish_Parliament_Debating_Chamber_-_geograph.org.uk_-_2883790.jpg",
+  "artist": "Peter Evans",
+  "lic": "CC BY-SA 2.0"
+ },
+ "scoreboard": {
+  "page": "https://commons.wikimedia.org/wiki/File:Nippert_Stadium_scoreboard_(27103336375).jpg",
+  "artist": "Hayden Schiff from Cincinnati, USA",
+  "lic": "CC BY 2.0"
+ },
+ "finish": {
+  "page": "https://commons.wikimedia.org/wiki/File:Osaka07_D7A_W200M_finish.jpg",
+  "artist": "Eckhard Pecher (Arcimboldo)",
+  "lic": "CC BY 2.5"
+ },
+ "starting-blocks": {
+  "page": "https://commons.wikimedia.org/wiki/File:Starting_blocks_(36592080034).jpg",
+  "artist": "DoD News",
+  "lic": "CC BY 2.0"
+ },
+ "library": {
+  "page": "https://commons.wikimedia.org/wiki/File:Reading_Room,_St._Louis_Central_Public_Library,_Olive_Street,_St._Louis,_MO.jpg",
+  "artist": "w_lemay",
+  "lic": "CC BY-SA 2.0"
+ },
+ "climbers": {
+  "page": "https://commons.wikimedia.org/wiki/File:Galen_Rowell_1974.jpg",
+  "artist": "Jim Eden",
+  "lic": "Public domain"
  }
 }
