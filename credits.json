@@ -1,0 +1,77 @@
+{
+ "napa-valley": {
+  "page": "https://commons.wikimedia.org/wiki/File:Napa_Valley,_March_2011.jpg",
+  "artist": "^demon",
+  "lic": "CC BY-SA 3.0"
+ },
+ "napa-vineyard": {
+  "page": "https://commons.wikimedia.org/wiki/File:NorCal2018_-002_Wine_Country_Napa_Valley_Vineyard_-_Domaine_Carneros_-S0411044.jpg",
+  "artist": "Fred Hsu on en.wikipedia",
+  "lic": "CC BY-SA 3.0"
+ },
+ "napa-road": {
+  "page": "https://commons.wikimedia.org/wiki/File:NorCal2018_-005_Wine_Country_-_Random_Napa_Valley_Vineyard_on_the_side_of_a_road_-S0292033.jpg",
+  "artist": "Fred Hsu on en.wikipedia",
+  "lic": "CC BY-SA 3.0"
+ },
+ "chateau": {
+  "page": "https://commons.wikimedia.org/wiki/File:Chateau_Montelena.jpg",
+  "artist": "Gear$Head",
+  "lic": "CC BY-SA 3.0"
+ },
+ "beringer": {
+  "page": "https://commons.wikimedia.org/wiki/File:Beringer_Vineyards,_Napa_Valley,_California,_USA_(8309413934).jpg",
+  "artist": "Jim G from Silicon Valley, CA, USA",
+  "lic": "CC BY 2.0"
+ },
+ "halfmoon": {
+  "page": "https://commons.wikimedia.org/wiki/File:Half_Moon_Bay,_CA_(San_Matteo_Coast)_-_panoramio.jpg",
+  "artist": "MARELBU",
+  "lic": "CC BY 3.0"
+ },
+ "halfmoon-waves": {
+  "page": "https://commons.wikimedia.org/wiki/File:Half_Moon_Bay_Crashing_Waves_(5148778631).jpg",
+  "artist": "Josh Dobson from UK",
+  "lic": "CC BY 2.0"
+ },
+ "sandhill": {
+  "page": "https://commons.wikimedia.org/wiki/File:Sand_Hill_Road_Eastbound_View.jpg",
+  "artist": "Coolcaesar",
+  "lic": "CC BY-SA 4.0"
+ },
+ "meeting-room": {
+  "page": "https://commons.wikimedia.org/wiki/File:Chairs_in_a_meeting_room_(Unsplash).jpg",
+  "artist": "Breather breather",
+  "lic": "CC0"
+ },
+ "rowing": {
+  "page": "https://commons.wikimedia.org/wiki/File:An_eight-oared_shell_boat_and_crew-race_between_Harvard_University_and_Cambridge_(England)_University,_Cambridge,_Mass._LCCN96513663.jpg",
+  "artist": "Johnston, Frances Benjamin, 1864-1952, photographer",
+  "lic": "Public domain"
+ },
+ "rowing-race": {
+  "page": "https://commons.wikimedia.org/wiki/File:Yale_and_Harvard_meet_in_their_annual_boat_race_at_New_London_this_week_LOC_3707358200.jpg",
+  "artist": "The Library of Congress",
+  "lic": "No restrictions"
+ },
+ "huddle": {
+  "page": "https://commons.wikimedia.org/wiki/File:Team_Huddle_With_Coach_K_(2752766836).jpg",
+  "artist": "kris krüg from Vancouver, Canada",
+  "lic": "CC BY-SA 2.0"
+ },
+ "huddle-women": {
+  "page": "https://commons.wikimedia.org/wiki/File:Australian_Team_Talk_-_London_2012_Olympics_Womens_Basketball_(Australia_v_Russia).jpg",
+  "artist": "&DC from Coulsdon, Gtr London, United Kingdom",
+  "lic": "CC BY 2.0"
+ },
+ "nyfd-chief": {
+  "page": "https://commons.wikimedia.org/wiki/File:NYFD_Deputy_Chief_Joseph_Curry_at_the_WTC_on_2001-09-14.jpg",
+  "artist": "Navy photo by Petty Officer 1st Class Preston Keres",
+  "lic": "Public domain"
+ },
+ "assembly": {
+  "page": "https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg",
+  "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+  "lic": "CC BY 3.0"
+ }
+}

@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пять пороков команды — разбор бизнес-романа Патрика Ленсиони</title>
+<meta name="description" content="Полный разбор книги Патрика Ленсиони «Пять пороков команды»: модель пирамиды, сюжет романа о DecisionTech, упражнения по каждому пороку, интерактивная анкета на 15 вопросов, словарь и роль лидера.">
+<meta property="og:title" content="Пять пороков команды">
+<meta property="og:description" content="Недоверие → уход от конфликтов → необязательность → нетребовательность → безразличие к результату. Разбор бизнес-романа Патрика Ленсиони с анкетой для самопроверки.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,800;0,900;1,500;1,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f7f4ee; --paper2:#efeade; --paper3:#e7e0d2; --card:#fffdf9;
+  --ink:#17130e; --ink2:#3b352c; --dim:#7b7264; --dim2:#9a9184;
+  --line:#ddd4c4; --line2:#c7bca7;
+  --red:#a4382a; --red2:#c9634c; --green:#4e6a48; --gold:#96702c;
+  --maxw:1160px; --wide:1420px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font-family:"Inter",-apple-system,"Segoe UI",Arial,sans-serif;
+  font-size:17.5px; line-height:1.68; -webkit-font-smoothing:antialiased;
+  font-feature-settings:"kern","liga";
+}
+h1,h2,h3,blockquote,.serif,.pyr-label{font-family:"Playfair Display",Georgia,serif}
+img{max-width:100%;display:block}
+a{color:var(--red);text-underline-offset:3px}
+a:hover{color:var(--gold)}
+
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:var(--red);z-index:100;transition:width .1s linear}
+
+#nav{position:sticky;top:0;z-index:60;background:rgba(247,244,238,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+#nav .in{max-width:var(--wide);margin:0 auto;padding:9px 22px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+#nav b{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim2);margin-right:8px;font-weight:700}
+#nav a{font-size:11.5px;color:var(--dim);text-decoration:none;padding:5px 11px;border:1px solid var(--line);border-radius:100px;white-space:nowrap;transition:.16s;background:var(--card)}
+#nav a:hover{color:var(--ink);border-color:var(--line2)}
+
+section{padding:100px 22px;border-bottom:1px solid var(--line);position:relative}
+.wrap{max-width:var(--maxw);margin:0 auto}
+.wide{max-width:var(--wide);margin:0 auto}
+.kicker{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin:0 0 20px;font-weight:700}
+h1{font-size:clamp(46px,7.6vw,104px);line-height:.96;margin:0 0 20px;letter-spacing:-.025em;font-weight:800}
+h2{font-size:clamp(31px,4.4vw,54px);line-height:1.08;margin:0 0 22px;letter-spacing:-.018em;font-weight:800}
+h3{font-size:clamp(20px,2.3vw,26px);margin:44px 0 13px;letter-spacing:-.01em;font-weight:700;line-height:1.24}
+h4{font-family:"Inter";font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin:0 0 14px;font-weight:700}
+p{margin:0 0 18px;max-width:68ch}
+.lead{font-family:"Playfair Display";font-size:clamp(21px,2.4vw,29px);line-height:1.36;color:var(--ink);max-width:26ch;font-weight:500}
+.lead.wide-lead{max-width:44ch}
+.dim{color:var(--dim)}
+.small{font-size:15px;line-height:1.58}
+.xs{font-size:12.8px;line-height:1.5;color:var(--dim)}
+strong,b{font-weight:600;color:#000}
+ul{margin:0 0 18px;padding-left:0;list-style:none}
+li{margin:0 0 11px;padding-left:23px;position:relative}
+li:before{content:"";position:absolute;left:3px;top:12px;width:7px;height:1px;background:var(--red)}
+ol{padding-left:23px;margin:0 0 18px} ol li{padding-left:5px} ol li:before{display:none}
+ol li::marker{color:var(--red);font-weight:700;font-size:14px}
+
+/* cover: split */
+#cover{padding:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1.05fr .95fr;min-height:96vh;align-items:stretch}
+#cover .txt{padding:96px 56px 72px;display:flex;flex-direction:column;justify-content:center;max-width:760px;margin-left:auto;width:100%}
+#cover .pic{position:relative;overflow:hidden;background:var(--paper3)}
+#cover .pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+#cover .pic:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(247,244,238,.9) 0%,rgba(247,244,238,0) 34%)}
+.title-sub{font-family:"Playfair Display";font-style:italic;font-size:clamp(19px,2.3vw,28px);color:var(--red);margin:-6px 0 26px;font-weight:500}
+.byline{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 28px;font-weight:600}
+.cover-meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:36px;padding-top:24px;border-top:1px solid var(--line2)}
+.cover-meta div{font-size:12px;color:var(--dim);max-width:15ch}
+.cover-meta div b{display:block;font-family:"Playfair Display";font-size:26px;color:var(--ink);font-weight:800;letter-spacing:-.02em;margin-bottom:2px}
+
+/* case hero */
+.case-hero{position:relative;min-height:66vh;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line);background:var(--paper3)}
+.case-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.case-hero .sh{position:absolute;inset:0;background:linear-gradient(0deg,rgba(23,19,14,.9) 4%,rgba(23,19,14,.28) 56%,rgba(23,19,14,.42) 100%)}
+.case-hero .in{position:relative;z-index:2;max-width:var(--maxw);margin:0 auto;width:100%;padding:0 22px 56px;color:#fdfbf7}
+.case-hero h2{color:#fdfbf7;margin-bottom:12px}
+.num{font-family:"Inter";font-size:12px;letter-spacing:.3em;color:#e9b98f;margin-bottom:14px;font-weight:700}
+.hero-sub{font-size:clamp(16px,2vw,21px);color:#eee6da;max-width:50ch;margin:0}
+
+figure{margin:0}
+figcaption{font-size:12.5px;color:var(--dim);padding:10px 2px 0;line-height:1.45}
+.full{margin:40px 0}
+.full img{width:100%;aspect-ratio:21/9;object-fit:cover}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:34px 0}
+.grid3 img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:34px 0}
+.ba img{width:100%;aspect-ratio:4/3;object-fit:cover}
+
+/* two-list: sick vs healthy */
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);margin:34px 0}
+.duo > div{background:var(--card);padding:24px 26px}
+.duo .bad h4{color:var(--red)}
+.duo .good h4{color:var(--green)}
+.duo li:before{background:currentColor;opacity:.5}
+.duo .bad li{color:var(--ink2)} .duo .bad li:before{background:var(--red)}
+.duo .good li{color:var(--ink2)} .duo .good li:before{background:var(--green)}
+.duo ul:last-child{margin-bottom:0}
+
+.box{border:1px solid var(--line);background:var(--card);padding:24px 26px;margin:30px 0}
+.box.scene{border-left:3px solid var(--gold);background:var(--paper2)}
+.box.lead-role{border-left:3px solid var(--green)}
+.box.warn{border-left:3px solid var(--red)}
+.box p:last-child,.box ul:last-child,.box ol:last-child{margin-bottom:0}
+
+blockquote{margin:36px 0;padding:0 0 0 26px;border-left:2px solid var(--red);
+  font-size:clamp(19px,2.2vw,26px);line-height:1.4;font-style:italic;color:var(--ink);max-width:56ch;font-weight:500}
+blockquote cite{display:block;margin-top:14px;font-family:"Inter";font-size:12.5px;font-style:normal;color:var(--dim);font-weight:600;letter-spacing:.02em}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:36px 0}
+.cards > div{background:var(--card);padding:22px 24px 24px}
+.cards h5{font-family:"Playfair Display";font-size:19px;font-weight:700;margin:0 0 3px;letter-spacing:-.01em}
+.cards .role{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:11px}
+.cards p{font-size:14.6px;line-height:1.52;margin:0;color:var(--ink2);max-width:none}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:36px 0}
+.steps > div{background:var(--card);padding:22px 24px 24px;counter-increment:s}
+.steps > div:before{content:counter(s,decimal-leading-zero);font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--red);display:block;margin-bottom:11px}
+.steps h5{font-size:15.5px;font-weight:700;margin:0 0 7px;letter-spacing:-.005em}
+.steps p{font-size:14.6px;line-height:1.5;margin:0;color:var(--ink2);max-width:none}
+.steps .time{display:inline-block;margin-top:10px;font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:100px;padding:3px 10px}
+
+.terms{display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);margin:34px 0}
+.terms > div{background:var(--card);padding:20px 22px 22px}
+.terms dt{font-family:"Playfair Display";font-weight:700;font-size:17px;color:var(--red);margin-bottom:6px}
+.terms dd{margin:0;font-size:14.6px;line-height:1.5;color:var(--ink2)}
+
+.chart{border:1px solid var(--line);background:var(--card);padding:28px 26px 22px;margin:38px 0}
+.chart svg{width:100%;height:auto;display:block}
+.chart .cap{font-size:12.5px;color:var(--dim);margin-top:16px;line-height:1.5;max-width:76ch}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:30px 0}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:700;border-bottom:1px solid var(--line2)}
+td b{color:var(--red)}
+.tbl-scroll{overflow-x:auto;margin:30px 0}
+
+/* quiz */
+.quiz{border:1px solid var(--line2);background:var(--card);padding:30px 30px 26px;margin:38px 0}
+.q{padding:15px 0;border-bottom:1px solid var(--line)}
+.q:last-of-type{border-bottom:0}
+.q .qt{display:flex;gap:14px;align-items:flex-start;margin-bottom:11px}
+.q .qn{font-size:11.5px;font-weight:700;color:var(--dim2);min-width:22px;padding-top:3px}
+.q .qx{font-size:15.6px;line-height:1.5;color:var(--ink)}
+.opts{display:flex;gap:8px;flex-wrap:wrap;padding-left:36px}
+.opts label{cursor:pointer}
+.opts input{position:absolute;opacity:0;pointer-events:none}
+.opts span{display:inline-block;font-size:12.5px;font-weight:600;padding:6px 15px;border:1px solid var(--line2);border-radius:100px;color:var(--dim);background:var(--paper);transition:.14s;user-select:none}
+.opts input:checked + span{background:var(--red);border-color:var(--red);color:#fff}
+.opts label:hover span{border-color:var(--red)}
+#qresult{margin-top:26px;padding-top:24px;border-top:1px solid var(--line2)}
+.res-row{display:grid;grid-template-columns:minmax(190px,1fr) 92px 1fr;gap:16px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.res-row:last-child{border-bottom:0}
+.res-name{font-size:14.5px;font-weight:600}
+.res-score{font-family:"Playfair Display";font-size:24px;font-weight:800}
+.res-verdict{font-size:13px;color:var(--dim)}
+.res-row.ok .res-score{color:var(--green)} .res-row.mid .res-score{color:var(--gold)} .res-row.bad .res-score{color:var(--red)}
+.qhint{font-size:13px;color:var(--dim);margin-top:16px}
+.qbtn{font-family:"Inter";font-size:12.5px;font-weight:600;letter-spacing:.04em;padding:11px 22px;border:1px solid var(--line2);background:var(--paper);border-radius:100px;cursor:pointer;color:var(--ink)}
+.qbtn:hover{border-color:var(--red);color:var(--red)}
+
+footer{padding:76px 22px 92px;background:var(--paper2);border-top:1px solid var(--line)}
+.credits{font-size:12.4px;line-height:1.6;color:var(--dim);columns:2;column-gap:38px}
+.credits a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line2)}
+.credits a:hover{color:var(--red)}
+
+@media(max-width:900px){
+  body{font-size:16.8px}
+  section{padding:70px 20px}
+  #cover{grid-template-columns:1fr;min-height:0}
+  #cover .txt{padding:74px 22px 54px;max-width:none}
+  #cover .pic{height:44vh;order:-1}
+  #cover .pic:after{background:linear-gradient(0deg,rgba(247,244,238,.92) 0%,rgba(247,244,238,0) 46%)}
+  .grid2,.duo,.ba,.grid3{grid-template-columns:1fr}
+  .credits{columns:1}
+  .case-hero{min-height:52vh}
+  .res-row{grid-template-columns:1fr 70px;grid-template-areas:"n s" "v v";gap:6px 14px}
+  .res-name{grid-area:n} .res-score{grid-area:s;text-align:right} .res-verdict{grid-area:v}
+}
+
+/* ============ ПЕЧАТЬ / PDF: формат слайда 16:9 ============ */
+@media print{
+  @page{ size:13.333in 7.5in; margin:0; }
+  html,body{background:var(--paper) !important;margin:0}
+  *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important}
+  body::before{content:"";position:fixed;inset:0;background:#f7f4ee;z-index:-10}
+  body{font-size:11.6px;line-height:1.56}
+  #nav,#prog,#qreset,.qhint{display:none !important}
+  a{color:var(--red);text-decoration:none}
+
+  /* ---- полосные развороты ---- */
+  #cover,.case-hero{
+    width:13.333in !important;height:7.5in !important;min-height:0 !important;max-height:7.5in !important;
+    margin:0 !important;padding:0 !important;border:0 !important;
+    break-after:page;break-inside:avoid;overflow:hidden;position:relative}
+  #cover{display:grid;grid-template-columns:1.05fr .95fr;align-items:stretch}
+  #cover .txt{padding:0 62px !important;max-width:none !important;height:100%;justify-content:center;order:0}
+  #cover .pic{height:100% !important;order:0}
+  #cover .pic:after{background:linear-gradient(90deg,rgba(247,244,238,.9) 0%,rgba(247,244,238,0) 34%) !important}
+  #cover .pic{height:100%}
+  .case-hero{display:flex;align-items:flex-end}
+  .case-hero .in{padding:0 84px 66px !important;max-width:none !important}
+  h1{font-size:74px;margin-bottom:14px}
+  .case-hero h2{font-size:50px;margin-bottom:12px}
+  .title-sub{font-size:21px;margin:0 0 18px}
+  .byline{font-size:10.5px;margin-bottom:20px}
+  #cover .lead{font-size:16px;max-width:42ch}
+  .hero-sub{font-size:16px;max-width:54ch}
+  .cover-meta{margin-top:26px;padding-top:18px;gap:26px}
+  .cover-meta div{font-size:10px;max-width:14ch}
+  .cover-meta div b{font-size:21px}
+  .num{font-size:10.5px;margin-bottom:11px}
+
+  /* ---- текстовые полосы ---- */
+  section{padding:15mm 19mm !important;border-bottom:0 !important;break-before:page;
+    -webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .wrap,.wide{max-width:none !important}
+  .prose{columns:2;column-gap:38px}
+  .prose > *{max-width:none !important}
+  .prose h3{margin-top:0;break-after:avoid}
+  p,li{orphans:3;widows:3}
+  h2{font-size:35px;margin:0 0 16px;break-after:avoid;break-inside:avoid;max-width:22ch}
+  h3{font-size:18px;margin:22px 0 9px;break-after:avoid}
+  h4{font-size:9.2px}
+  .kicker{font-size:9.2px;margin-bottom:12px}
+  .lead{font-size:17px;max-width:56ch;margin-bottom:22px}
+  .lead.wide-lead{max-width:78ch}
+  blockquote{font-size:18px;margin:22px 0;padding-left:20px;max-width:68ch}
+  blockquote cite{font-size:10px;margin-top:10px}
+
+  /* печать может считать вьюпорт узким — возвращаем десктопные сетки */
+  .grid2{grid-template-columns:1fr 1fr !important;gap:38px}
+  .grid3{grid-template-columns:repeat(3,1fr) !important}
+  .ba,.duo{grid-template-columns:1fr 1fr !important}
+  .credits{columns:3 !important}
+  img{max-height:4.9in;object-fit:cover}
+  #cover .pic img,.case-hero > img{max-height:none}
+
+  .box,.chart,figure,.duo,.grid2{break-inside:avoid}
+  .quiz{break-inside:auto}
+  .cards,.steps,.terms,.tbl-scroll,table{break-inside:auto}
+  .cards > div,.steps > div,.terms > div,tr,.q{break-inside:avoid}
+  thead{display:table-header-group}
+
+  .cards,.steps,.terms{margin:20px 0;grid-template-columns:repeat(auto-fit,minmax(238px,1fr))}
+  .cards > div,.steps > div,.terms > div{padding:14px 15px 16px}
+  .cards h5{font-size:15px} .cards p,.steps p,.terms dd{font-size:10.4px;line-height:1.44}
+  .steps h5{font-size:12.8px} .terms dt{font-size:13.5px}
+  .box{padding:17px 19px;margin:20px 0}
+  .box p,.box li{max-width:80ch}
+  .duo{margin:20px 0} .duo > div{padding:16px 18px}
+  .duo li{font-size:10.8px;margin-bottom:7px}
+  .full{margin:22px 0} .full img{aspect-ratio:32/9}
+  .ba{margin:22px 0;gap:16px} .ba img{aspect-ratio:16/9}
+  figcaption{font-size:9.9px;padding-top:7px}
+  .chart{padding:18px 18px 14px;margin:20px 0}
+  .chart svg{width:auto !important;height:4.15in;margin:0 auto}
+  .chart .cap{font-size:10.1px;margin-top:11px}
+  table{font-size:10.2px;margin:16px 0} th,td{padding:7px 9px}
+  .tbl-scroll{overflow:visible}
+  .quiz{padding:18px 20px;margin:20px 0}
+  .q{padding:8px 0} .q .qx{font-size:11px;line-height:1.4} .q .qn{font-size:9.5px}
+  .opts{padding-left:30px;gap:5px} .opts span{font-size:9.5px;padding:3px 10px}
+  #qresult{display:none}
+  .no-print{display:none !important}
+  .xs{font-size:9.6px;max-width:84ch} .small{font-size:10.6px}
+  footer{padding:15mm 19mm !important;background:transparent;break-before:page;
+    -webkit-box-decoration-break:clone;box-decoration-break:clone}
+  .credits{font-size:9.2px}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<nav id="nav"><div class="in">
+  <b>Пять пороков</b>
+  <a href="#prolog">Пролог</a>
+  <a href="#katerine">Кэтрин</a>
+  <a href="#komanda">Команда</a>
+  <a href="#model">Модель</a>
+  <a href="#p1">1 Недоверие</a>
+  <a href="#p2">2 Конфликты</a>
+  <a href="#p3">3 Обязательность</a>
+  <a href="#p4">4 Требовательность</a>
+  <a href="#p5">5 Результат</a>
+  <a href="#anketa">Анкета</a>
+  <a href="#vremya">Время</a>
+  <a href="#finale">Развязка</a>
+  <a href="#principy">Принципы</a>
+  <a href="#slovar">Словарь</a>
+</div></nav>
+
+<!-- ============ COVER ============ -->
+<section id="cover">
+  <div class="txt">
+    <p class="kicker">Разбор бизнес-романа · 256 страниц за 25 минут</p>
+    <h1>Пять пороков команды</h1>
+    <p class="title-sub">Не финансы. Не стратегия. Не технологии.</p>
+    <p class="byline">Патрик Ленсиони · «Манн, Иванов и Фербер», 2016</p>
+    <p class="lead wide-lead">В технологическую компанию на грани развала приходит 57-летняя женщина без опыта в отрасли — и вместо работы увозит команду топ-менеджеров в долину Напа. Роман, из которого выросла самая узнаваемая модель командной работы.</p>
+    <div class="cover-meta">
+      <div><b>5</b>пороков, выстроенных в пирамиду</div>
+      <div><b>1</b>слабое звено рвёт всю цепь</div>
+      <div><b>15</b>вопросов анкеты — тест прямо на странице</div>
+      <div><b>8</b>дней в квартал команда проводит вместе</div>
+    </div>
+    <p class="no-print" style="margin:26px 0 0"><a href="pyat-porokov-komandy.pdf" download
+       style="font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);
+              text-decoration:none;border:1px solid var(--line2);border-radius:100px;padding:11px 20px;
+              display:inline-block;background:var(--card)">Скачать PDF · формат 16:9</a></p>
+  </div>
+  <div class="pic">
+    <img src="img/napa-valley.jpg" alt="Долина Напа — место выездных совещаний в романе" fetchpriority="high">
+  </div>
+</section>
+
+<!-- ============ ПРОЛОГ ============ -->
+<div class="case-hero" id="prolog">
+  <img src="img/halfmoon.jpg" alt="Побережье Халф-Мун-Бей, Калифорния" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПРОЛОГ</p>
+    <h2>У них было всё,<br>кроме команды</h2>
+    <p class="hero-sub">Халф-Мун-Бей, тихий городок на побережье залива Сан-Франциско. Лучшие менеджеры, лучшие инвесторы, лучшие технологии — и два конкурента впереди.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">DecisionTech могла похвастаться самой опытной и высокооплачиваемой командой топ-менеджеров, какую можно вообразить. Осторожные венчурные фонды наперебой предлагали деньги. Талантливые разработчики слали резюме ещё до того, как компания сняла офис.</p>
+
+  <p>Это было почти два года назад — немалый срок для высокотехнологичной отрасли. После безоблачных первых месяцев начались срывы сроков. Неожиданно уволились несколько ведущих специалистов. Ухудшился моральный климат.</p>
+
+  <p>Менеджеры <strong>достигли совершенства в искусстве подставлять друг друга</strong>. Дух единства и товарищества сменила нудная обязаловка. Любая работа затягивалась, качество падало. О DecisionTech в Долине уже пошла слава как об одном из самых неприятных мест работы.</p>
+
+  <p>Совет директоров попросил 37-летнего Джефа Шенли, директора и одного из учредителей, оставить пост CEO. Ему предложили стать директором по развитию — и он согласился на понижение, не желая отказываться от денег, на которые мог рассчитывать при выходе компании на IPO. Три недели спустя на работу приняли Кэтрин.</p>
+
+  <div class="ba">
+    <figure>
+      <img src="img/sandhill.jpg" alt="Сэнд-Хилл-роуд — улица венчурных фондов Кремниевой долины" loading="lazy">
+      <figcaption>Сэнд-Хилл-роуд под Пало-Алто — адрес венчурных денег Долины. У DecisionTech с деньгами проблем не было.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/meeting-room.jpg" alt="Пустая переговорная комната" loading="lazy">
+      <figcaption>Совещания начинались вовремя и заканчивались минута в минуту. На них просто не успевали ничего решить.</figcaption>
+    </figure>
+  </div>
+
+  <blockquote>Добейтесь того, чтобы все сотрудники вашей компании смотрели в одном направлении, и вы победите в любой отрасли, на любом рынке, всегда и везде.<cite>Друг автора, основатель компании с миллиардными прибылями — из предисловия</cite></blockquote>
+
+  <div class="box warn">
+    <h4>Тезис, ради которого написана книга</h4>
+    <p>«Не финансы. Не стратегии. Не технологии. Командный дух остаётся главным конкурентным преимуществом, потому что <strong>это большая редкость</strong>».</p>
+    <p>Ленсиони сразу снимает романтику: совместная деятельность людей, у каждого из которых свой характер и свои недостатки, затруднена по определению. Создание сильной команды возможно — но это болезненный процесс, и успех приходит только к тем, кто в кропотливом ежедневном труде преодолел слабости, свойственные человеческой природе.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ КЭТРИН ============ -->
+<section id="katerine">
+<div class="wrap">
+  <p class="kicker">Герой</p>
+  <h2>Единственный, кто считал<br>её подходящей, был<br>председатель совета</h2>
+
+  <div class="grid2">
+    <div>
+      <p>Совет директоров так и не смог договориться, какие именно качества Кэтрин Питерсен неприемлемы для DecisionTech. Их было слишком много.</p>
+      <p>Ей было <strong>57 лет</strong> — по меркам Кремниевой долины почти старуха. Опыта в высоких технологиях у неё не было, если не считать членства в совете директоров. Карьера прошла в оперативном менеджменте совсем других отраслей — в частности, в автомобилестроении.</p>
+      <p>Она начала военнослужащей, вышла замуж за школьного учителя, который заодно тренировал баскетбольную команду, вырастила троих сыновей и сама несколько лет проработала учительницей. В 37 лет поступила в трёхлетнюю школу бизнеса в Хейворде — не Гарвард и не Стэнфорд — и окончила её на семестр раньше срока. В 54 вышла на пенсию.</p>
+      <p>Председатель много лет следил за её карьерой. Меньше чем за пять лет она стала исполнительным директором единственного в районе Сан-Франциско автозавода — совместного американо-японского предприятия — и превратила его в одно из самых успешных производств в стране.</p>
+      <blockquote style="font-size:clamp(20px,2.2vw,27px)">У неё был удивительный дар создавать команды.<cite>Патрик Ленсиони о Кэтрин</cite></blockquote>
+    </div>
+    <div>
+      <figure>
+        <img src="img/assembly.jpg" alt="Автомобильный конвейер" loading="lazy" style="aspect-ratio:4/3;object-fit:cover;width:100%">
+        <figcaption>Кэтрин пришла из автопрома — с совместного американо-японского завода под Сан-Франциско. В Долине это считали недостатком.</figcaption>
+      </figure>
+      <div class="box" style="margin-top:22px">
+        <h4>Что она сделала за первые две недели</h4>
+        <ul>
+          <li>Организовала небольшой приём в первый день.</li>
+          <li>Во второй провела беседы с каждым руководителем подразделения.</li>
+          <li>Всё остальное время ходила по офисам, болтала с сотрудниками и <strong>молча сидела на всех совещаниях</strong>, делая пометки в блокноте.</li>
+          <li>Попросила бывшего CEO и дальше вести еженедельные встречи топ-менеджеров.</li>
+          <li>Объявила серию двухдневных выездных совещаний в долине Напа — и отвергла первую же предложенную тему: повестка у неё уже была.</li>
+        </ul>
+        <p class="xs" style="margin-top:14px">Через две недели сомнения менеджеров превратились в уверенность: Кэтрин для этой работы не подходит. Председатель начал думать, что придётся предложить ей отставку — и уйти самому.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="box scene">
+    <h4>Сцена: разговор с председателем</h4>
+    <p>«Кажется, тебя пригласили строить новые мосты, а не сжигать старые», — сказал председатель, когда Кэтрин потребовала от технического директора отменить встречу с клиентом ради выезда в Напу.</p>
+    <p>Кэтрин ответила напоминанием, которое стало осью всей книги: <em>«Мой муж сравнивает слабую команду со сломанной рукой или ногой. Команда, как и кость, должна срастись, а это процесс болезненный. Более того, кость порой приходится вновь ломать, если она срослась неправильно. А это ещё хуже, потому что делается преднамеренно»</em>.</p>
+    <p>— Сколько человек в команде ты собираешься сломать, чтобы она срослась?<br>— Это я буду знать к концу месяца.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ КОМАНДА ============ -->
+<section id="komanda">
+<div class="wrap">
+  <p class="kicker">Расстановка</p>
+  <h2>Семеро, которые<br>не были командой</h2>
+  <p class="lead wide-lead">Никто, включая подчинённых, не считал топ-менеджеров DecisionTech командой. При этом по отдельности почти все они были приятными и разумными людьми.</p>
+
+  <div class="cards">
+    <div>
+      <h5>Кэтрин Питерсен</h5>
+      <div class="role">CEO</div>
+      <p>57 лет, из автопрома. Сильная сторона — умение отбрасывать второстепенное и видеть суть. Слабая, по её собственному признанию, — отвратительный публичный оратор.</p>
+    </div>
+    <div>
+      <h5>Джеф Шенли</h5>
+      <div class="role">Бывший CEO, директор по развитию</div>
+      <p>Блестяще привлекал инвесторов и людей. Вёл совещания «как в учебнике»: повестка заранее, регламент, начало и конец минута в минуту. Его не беспокоило, что на них ничего не решалось.</p>
+    </div>
+    <div>
+      <h5>Мишель «Майки» Бебе</h5>
+      <div class="role">Директор по маркетингу</div>
+      <p>Признанный в Долине гений брендинга — при полном отсутствии элементарных навыков общения. Привычка выразительно закатывать глаза в ответ на любое замечание. Её не любили больше всех.</p>
+    </div>
+    <div>
+      <h5>Мартин Гилмор</h5>
+      <div class="role">Технический директор</div>
+      <p>Основатель и изобретатель главного продукта, англичанин, степени Беркли и Кембриджа. На совещаниях открывал ноутбук и молчал — пока кто-нибудь не говорил глупость, тогда следовал язвительный комментарий.</p>
+    </div>
+    <div>
+      <h5>Джеф «Джей-Ро» Роулинз</h5>
+      <div class="role">Директор по продажам</div>
+      <p>Опытный, загорелый, неизменно вежливый, никогда не отказывал в просьбе. И редко выполнял обещанное — зато всегда искренне признавал промах и торжественно извинялся.</p>
+    </div>
+    <div>
+      <h5>Карлос Амадор</h5>
+      <div class="role">Служба поддержки клиентов</div>
+      <p>Говорил мало и всегда по делу, не жаловался на сверхурочные, переводил разговор, если его хвалили. Единственный, на кого можно было положиться — и чей потенциал был явно недоиспользован.</p>
+    </div>
+    <div>
+      <h5>Джен Мерсино</h5>
+      <div class="role">Финансовый директор</div>
+      <p>Вникала во все детали и экономила деньги компании как свои собственные. Считала своим недостатком чрезмерный для отрасли консерватизм.</p>
+    </div>
+    <div>
+      <h5>Ник Фаррел</h5>
+      <div class="role">Исполнительный директор</div>
+      <p>Переехал с семьёй из Среднего Запада на должность, обязанности которой уже были розданы другим. Не жаловался вслух, но считал себя единственным достойным кандидатом на роль CEO.</p>
+    </div>
+  </div>
+
+  <div class="box warn">
+    <h4>Диагноз со стороны</h4>
+    <p>Никто не проявлял откровенной враждебности и даже не спорил — однако явственно ощущалось внутреннее напряжение. Решения казались обречёнными, дискуссии вертелись вокруг пустяков, беседа не клеилась. Присутствующие откровенно ждали окончания совещаний.</p>
+    <p class="xs" style="margin-top:12px">Именно отсутствие конфликтов Кэтрин прочитала как симптом. «О том, что вам не хватает доверия, я сужу по отсутствию конфликтов во время совещаний».</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ МОДЕЛЬ ============ -->
+<section id="model">
+<div class="wrap">
+  <p class="kicker">Модель</p>
+  <h2>Пирамида: снизу вверх,<br>и никак иначе</h2>
+  <p class="lead wide-lead">Пороки часто рассматривают как отдельные проблемы, каждую из которых можно устранить независимо. На самом деле они образуют взаимосвязанную модель — и если команду поразил хотя бы один, это может погубить всё.</p>
+
+  <h3>Как одно тянет другое</h3>
+  <ol>
+    <li><strong>Взаимное недоверие.</strong> Возникает из боязни показать свою уязвимость. Если люди скрывают ошибки и недостатки любой ценой, создаётся атмосфера подозрительности.</li>
+    <li><strong>Уход от конфликтов.</strong> Не доверяя друг другу, люди неспособны к искренней открытой дискуссии. Вместо неё — нейтральные замечания и единогласное решение, которое никого не устраивает.</li>
+    <li><strong>Необязательность.</strong> Раз никто не сказал, что думает, никто и не поддерживает принятое решение. Работа движется очень медленно.</li>
+    <li><strong>Нетребовательность к другим.</strong> Из-за собственной необязательности члены команды не считают, что могут чего-то требовать. Даже видя вред для компании, исходят из принципа «это не моё дело».</li>
+    <li><strong>Безразличие к общему результату.</strong> Личные интересы — карьера, признание — или потребности своего отдела оказываются выше целей команды.</li>
+  </ol>
+
+  <div class="chart">
+    <h4>Пять пороков команды</h4>
+    <svg viewBox="0 0 980 520" role="img" aria-label="Пирамида пяти пороков команды: от взаимного недоверия в основании до безразличия к общему результату на вершине">
+      <g font-family="Inter, sans-serif">
+        <!-- bands -->
+        <path d="M340 30 L395 118 L285 118 Z" fill="#d4846c"/>
+        <path d="M285 118 L395 118 L444 206 L236 206 Z" fill="#c8715b"/>
+        <path d="M236 206 L444 206 L493 294 L187 294 Z" fill="#bc5e4a"/>
+        <path d="M187 294 L493 294 L542 382 L138 382 Z" fill="#b04b3a"/>
+        <path d="M138 382 L542 382 L591 470 L89 470 Z" fill="#a4382a"/>
+
+        <!-- labels inside -->
+        <text x="340" y="112" text-anchor="middle" fill="#fff" font-size="11.5" font-weight="700">Безразличие</text>
+        <text x="340" y="182" text-anchor="middle" fill="#fff" font-size="11" font-weight="700">Нетребовательность к другим</text>
+        <text x="340" y="258" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Необязательность</text>
+        <text x="340" y="346" text-anchor="middle" fill="#fff" font-size="16" font-weight="700">Уход от конфликтов</text>
+        <text x="340" y="434" text-anchor="middle" fill="#fff" font-size="17" font-weight="700">Взаимное недоверие</text>
+
+        <!-- numbers on the left -->
+        <g fill="#9a9184" font-size="12" font-weight="700" text-anchor="end">
+          <text x="70" y="79">5</text><text x="70" y="167">4</text><text x="70" y="255">3</text>
+          <text x="70" y="343">2</text><text x="70" y="431">1</text>
+        </g>
+
+        <!-- connectors and drivers -->
+        <g stroke="#c7bca7" stroke-width="1">
+          <line x1="400" y1="74" x2="676" y2="74"/>
+          <line x1="450" y1="162" x2="676" y2="162"/>
+          <line x1="499" y1="250" x2="676" y2="250"/>
+          <line x1="548" y1="338" x2="676" y2="338"/>
+          <line x1="597" y1="426" x2="676" y2="426"/>
+        </g>
+        <g fill="#7b7264" font-size="13.5">
+          <text x="690" y="70">Карьеризм и эгоизм</text>
+          <text x="690" y="158">Низкие стандарты</text>
+          <text x="690" y="246">Неопределённость</text>
+          <text x="690" y="334">Фальшивое согласие</text>
+          <text x="690" y="422">Уязвимость</text>
+        </g>
+        <text x="690" y="46" fill="#a4382a" font-size="10.5" font-weight="700" letter-spacing="2">ЧТО ЛЕЖИТ В ОСНОВЕ</text>
+        <text x="89" y="497" fill="#9a9184" font-size="11.5">фундамент — снизу</text>
+        <text x="591" y="497" text-anchor="end" fill="#9a9184" font-size="11.5">вершина — результат</text>
+      </g>
+    </svg>
+    <p class="cap">Слева — сам порок, справа — то, что за ним стоит. Схема читается снизу вверх: каждый следующий уровень держится на предыдущем. Именно так Кэтрин рисовала её на белой доске в конференц-зале в Напе, добавляя по строчке за раз.</p>
+  </div>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Пять пороков</h4>
+      <ul>
+        <li>Не доверяют друг другу</li>
+        <li>Избегают споров</li>
+        <li>Не поддерживают решения, под которыми подписались</li>
+        <li>Не спрашивают с коллег</li>
+        <li>Ставят личное выше общего</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Пять добродетелей</h4>
+      <ul>
+        <li>Доверяют друг другу</li>
+        <li>Открыто обсуждают идеи и проблемы</li>
+        <li>Заинтересованы в принимаемых решениях и планах</li>
+        <li>Отвечают за выполнение — и невыполнение</li>
+        <li>Нацелены на достижение общей цели</li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="small dim">«Всё очень просто, скажете вы. Так и есть — во всяком случае теоретически. На практике всё оказывается гораздо сложнее хотя бы потому, что от каждого требуются железная дисциплина, самоотдача и настойчивость, которыми наделён далеко не каждый».</p>
+</div>
+</section>
+
+<!-- ============ ПОРОК 1 ============ -->
+<div class="case-hero" id="p1">
+  <img src="img/napa-vineyard.jpg" alt="Виноградники долины Напа" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПОРОК 1 · ОСНОВАНИЕ</p>
+    <h2>Взаимное недоверие</h2>
+    <p class="hero-sub">В основе — уязвимость. Не «я уверен, что коллега справится», а «я не боюсь при нём ошибиться».</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">Слово «доверие» используется так часто, что превратилось в штамп — наподобие счастливого детства или вечной любви. Поэтому важно определить, что именно имеется в виду.</p>
+
+  <p>В контексте команды доверие — это <strong>убеждённость в том, что действия коллег диктуются благими намерениями</strong>, поэтому не надо бояться и защищаться. Фигурально выражаясь, члены команды не должны ждать от коллег удара в спину.</p>
+
+  <p>Есть более распространённое толкование: уверенность в человеке, способность предсказать его поведение по прошлому опыту. Можно быть уверенным, что тот, кто всегда справлялся, справится и сейчас. <em>Но для настоящей команды этого недостаточно.</em></p>
+
+  <p>Нужно, чтобы её члены не опасались демонстрировать друг другу свою уязвимость: слабости, отсутствие навыков, проблемы в общении, ошибки — и открыто просили о помощи.</p>
+
+  <div class="box warn">
+    <h4>Почему это так трудно</h4>
+    <p>Люди, получая образование и продвигаясь по службе, приучаются конкурировать с каждым из коллег и стараются превзойти их даже в мелочах. Борьба против всех превращается почти в инстинкт, от которого практически невозможно избавиться. Команды, лишённые доверия, тратят массу времени на выяснение отношений и сведение счетов; текучесть персонала в них высокая.</p>
+  </div>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Где нет доверия, люди…</h4>
+      <ul>
+        <li>скрывают свои слабости и ошибки;</li>
+        <li>не критикуют коллег;</li>
+        <li>неохотно обращаются за помощью;</li>
+        <li>быстро делают выводы о намерениях других, не пытаясь разобраться;</li>
+        <li>не интересуются опытом коллег и не слушают их советов;</li>
+        <li>тратят силы не на работу, а на то, чтобы произвести впечатление;</li>
+        <li>не высказывают недовольства;</li>
+        <li>боятся совещаний и ищут причины не проводить время вместе.</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Где доверие есть, люди…</h4>
+      <ul>
+        <li>не скрывают ошибок и слабостей;</li>
+        <li>обращаются друг к другу за помощью;</li>
+        <li>охотно отвечают на вопросы о своей работе;</li>
+        <li>исходят из того, что у коллег добрые намерения;</li>
+        <li>свободно предлагают помощь и критику;</li>
+        <li>ценят и используют опыт коллег;</li>
+        <li>немедленно извиняются и принимают извинения;</li>
+        <li>ждут любой возможности пообщаться и поработать вместе.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Упражнения</h3>
+  <div class="steps">
+    <div>
+      <h5>Немного о себе</h5>
+      <p>Руководитель задаёт каждому несколько неличных вопросов о жизни: братья и сёстры, место рождения, детские трудности, хобби, первая работа, самая плохая работа. Люди начинают видеть в коллегах не конкурентов, а просто людей.</p>
+      <span class="time">от 30 минут</span>
+    </div>
+    <div>
+      <h5>Эффективность команды</h5>
+      <p>Каждый называет, какой вклад в общее дело внёс каждый коллега и в чём тому стоит либо активизироваться, либо остановиться. Обсуждают по очереди, начиная с руководителя. Высказаться должны все.</p>
+      <span class="time">от 60 минут</span>
+    </div>
+    <div>
+      <h5>Профили личности и поведения</h5>
+      <p>Описания личностных и поведенческих предпочтений — Ленсиони чаще всего использует опросник Майерс-Бриггс. Ценность в беспристрастности: все типы разные, но ни один не лучше другого. Нужен квалифицированный ведущий.</p>
+      <span class="time">от 4 часов</span>
+    </div>
+    <div>
+      <h5>Обратная связь</h5>
+      <p>Коллеги дают друг другу чёткую оценку действий. Метод рискованнее предыдущих. Главное — объективность и неформальный характер: субъективная обратная связь превращается в инструмент интриг и манипуляций.</p>
+    </div>
+    <div>
+      <h5>Спортивные состязания — со звёздочкой</h5>
+      <p>Перетягивание каната и корпоративные пикники «уходят в прошлое, и туда им и дорога». Их достоинства далеко не всегда проявляются в рабочей обстановке. Годятся только как дополнение к серьёзной работе, а не вместо неё.</p>
+    </div>
+  </div>
+
+  <div class="box lead-role">
+    <h4>Роль лидера</h4>
+    <p>Главное, что может и должен сделать лидер, — <strong>первым продемонстрировать свою уязвимость</strong>. Порой для этого требуется рискнуть потерять лицо, чтобы побудить подчинённых к такому же риску.</p>
+    <p>И ещё: уязвимость лидера должна быть подлинной. Один из самых быстрых способов утратить доверие — изображать беззащитность, чтобы манипулировать эмоциями окружающих.</p>
+  </div>
+
+  <div class="box scene">
+    <h4>Сцена: упражнение, ставшее моментом истины</h4>
+    <p>В Напе Кэтрин попросила каждого назвать свою сильную и слабую стороны — и начала с себя: «Мой главный недостаток в том, что я не умею выступать на публике. Я отвратительный оратор».</p>
+    <p>Ник признался в высокомерии. Джен — в чрезмерном консерватизме. Джеф неожиданно сказал: «Я ужасно боюсь поражений. Поэтому всё проверяю и перепроверяю и стараюсь делать сам… И я думаю, именно из-за этого наша компания терпит поражение, а я больше не директор DecisionTech».</p>
+    <p>Мартин признал, что ему трудно с людьми: «Неужели я произвожу такое впечатление? Это ужасно. Я и не знал…»</p>
+    <p>И только Майки прочла по бумажке: сильная сторона — знание рынка, слабая — финансы. «Все молчали. Облегчение от того, что она не сказала ничего неприятного, и разочарование из-за откровенной фальши».</p>
+  </div>
+
+  <div class="box">
+    <h4>Связь с пороком 2</h4>
+    <p>Доверяя друг другу, члены команды <em>создают возможности для конфликтов</em>: они не боятся вступать в открытую, подчас излишне эмоциональную дискуссию, потому что знают — их не накажут за слова, которые в другой команде сочли бы обидными.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ ПОРОК 2 ============ -->
+<div class="case-hero" id="p2">
+  <img src="img/huddle.jpg" alt="Команда в круге с тренером" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПОРОК 2</p>
+    <h2>Уход от конфликтов</h2>
+    <p class="hero-sub">Сторонний наблюдатель вполне может принять конструктивный конфликт за банальную ссору. Разница в том, что обсуждаются идеи, а не люди.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">Любые длительные взаимоотношения для своего развития требуют конструктивного конфликта. Это относится к браку, партнёрству, дружбе и, конечно, к бизнесу.</p>
+
+  <p>Чем выше вы поднимаетесь по служебной лестнице, тем больше встречаете людей, тратящих невероятное количество сил на то, чтобы избежать открытого обсуждения, жизненно необходимого любой сильной команде.</p>
+
+  <p>Продуктивный конфликт нужно отличать от деструктивного соперничества и интриг. В конструктивном обсуждаются <strong>только концепции и идеи</strong> — и ни в коем случае личные качества участников. При этом ему могут быть свойственны накал страстей, повышенный тон и взаимные упреки.</p>
+
+  <p>Участники быстро и всесторонне обсуждают вопрос, и после дискуссии у них не остаётся неприятного осадка — есть только желание перейти к следующему.</p>
+
+  <blockquote>Многие, избегая конфликта, объясняют это стремлением к эффективности. Хотя как раз конфликт способен по-настоящему сэкономить время.<cite>Патрик Ленсиони</cite></blockquote>
+
+  <p>Из-за страусиной позиции приходится по многу раз возвращаться к одним и тем же вопросам. Руководители — противники конфликта обычно просят высказывать мнения в частном порядке и не выносить проблему на общее обсуждение. В результате решение откладывается, а проблема не решается.</p>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Команды, которые боятся конфликта</h4>
+      <ul>
+        <li>скучные совещания;</li>
+        <li>процветают интриги, копятся взаимные обиды;</li>
+        <li>не решаются трудные вопросы, мнения по которым разделились;</li>
+        <li>работники не прислушиваются друг к другу;</li>
+        <li>время уходит впустую на методы управления, минимизирующие риск столкновений.</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Команды, которые не боятся</h4>
+      <ul>
+        <li>оживлённые, интересные совещания;</li>
+        <li>используются мнения всех членов команды;</li>
+        <li>быстро решаются проблемы;</li>
+        <li>интриги отсутствуют и не одобряются;</li>
+        <li>важные проблемы обсуждаются открыто сразу же при возникновении.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Упражнения</h3>
+  <div class="steps">
+    <div>
+      <h5>«Подрывник»</h5>
+      <p>Выбранный (иногда назначенный) человек, чья задача — извлечь на свет скрытые разногласия и заставить их обсудить. Нужны мужество, уважение коллег, объективность и твёрдость: нельзя прекращать обсуждение, пока не будет полной ясности.</p>
+    </div>
+    <div>
+      <h5>Модерирование в моменте</h5>
+      <p>Дождаться момента, когда спорящие почувствуют дискомфорт, прервать их и напомнить, что спор необходим. А когда дискуссия закончится — сказать, что этот конфликт был полезен и избегать его в дальнейшем не следует.</p>
+    </div>
+    <div>
+      <h5>Модель Томаса — Килманна</h5>
+      <p>Инструмент, разработанный специально для конфликтных ситуаций: помогает понять естественные реакции разных людей на конфликт и выбрать подходящую модель поведения.</p>
+    </div>
+  </div>
+
+  <div class="box lead-role">
+    <h4>Роль лидера</h4>
+    <p>Самое трудное — преодолеть естественное желание уберечь людей от стресса. Лидер, который искусственно устраняет разногласия, напоминает чересчур заботливого родителя, оберегающего детей от ссор: ребёнок вырастает, не научившись ни постоять за себя, ни выходить из конфликта.</p>
+    <p>Нужно продемонстрировать самообладание и позволить команде самой прийти к решению, каким бы тяжёлым ни был этот путь. Многим руководителям кажется, что раз возник конфликт — значит, они не справились с обязанностями. Это не так.</p>
+  </div>
+
+  <div class="box scene">
+    <h4>Сцена: «Да мы же просто ссоримся!»</h4>
+    <p>Спустя месяц Ник и Джен схлестнулись через стол из-за бюджета — едва не доходя до рукопашной. Когда аргументы кончились, Джен с досадой сказала: «Ничего у нас не изменилось! И похоже, дело совсем не в Майки…»</p>
+    <p>Кэтрин улыбнулась: <em>«Спокойно. Это и есть тот самый продуктивный рабочий конфликт, о котором мы говорили месяц назад. Просто отличный конфликт»</em>.</p>
+    <p>— Продуктивный? Да мы же просто ссоримся!<br>— Вы не ссоритесь, а спорите. Спорите по существу. Это ваша работа. Если вы её не выполните, то её придётся передать вашим подчинённым, у которых для этого нет ни возможностей, ни полномочий.</p>
+  </div>
+
+  <div class="box">
+    <h4>Связь с пороком 3</h4>
+    <p>Конструктивный конфликт позволяет всем узнать мнения коллег и выработать решение, максимально устраивающее всех. В результате каждый чувствует ответственность за его выполнение.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ ПОРОК 3 ============ -->
+<div class="case-hero" id="p3">
+  <img src="img/rowing.jpg" alt="Гребная восьмёрка на гонке" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПОРОК 3</p>
+    <h2>Необязательность</h2>
+    <p class="hero-sub">«Каждый гребёт в свою сторону, в результате лодка стоит». Обязательность — это определённость плюс безоговорочная поддержка решения.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">Сильные команды вырабатывают чёткие и своевременные решения и исполняют их с одобрения всех участников — включая тех, кто сначала был против. Они уверены, что никто не будет саботировать принятое.</p>
+
+  <h3>Две причины необязательности</h3>
+  <div class="grid2">
+    <div>
+      <h4 style="color:var(--red)">Стремление к единогласию</h4>
+      <p>Эффективные команды понимают опасность длительного поиска согласия и умеют решать, когда полное совпадение мнений недостижимо. Разумный человек не станет добиваться, чтобы приняли непременно его предложение, — ему достаточно, чтобы его <strong>выслушали и поняли</strong>. А если решение всё же невозможно, лидер принимает его лично.</p>
+    </div>
+    <div>
+      <h4 style="color:var(--red)">Желание абсолютной определённости</h4>
+      <p>Сильные команды гордятся умением слаженно исполнять решения даже когда нет уверенности, что решение правильное. Старая армейская аксиома: <strong>любое действие лучше его отсутствия</strong>. Лучше принять смелое решение, ошибиться и столь же смело изменить его, чем упускать возможности.</p>
+    </div>
+  </div>
+
+  <p>Сравните с плохой командой, которая бесконечно взвешивает «за» и «против» и тянет с неотложным решением, рассчитывая получить дополнительную информацию. Это можно счесть благоразумным, но на деле оно опасно: парализует команду и порождает сомнения в собственных силах.</p>
+
+  <div class="box warn">
+    <h4>Почему этот порок разрушительнее прочих</h4>
+    <p>Неспособность топ-менеджеров прийти к чётким решениям ведёт к разладу во всей организации. Даже при незначительных разногласиях руководителей подчинённые обнаружат, что разные отделы получили слегка отличающиеся распоряжения.</p>
+    <p><strong>Небольшие разногласия между руководителями превращаются в непреодолимые пропасти, когда достигают конечных исполнителей.</strong></p>
+  </div>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Безответственная команда</h4>
+      <ul>
+        <li>не может чётко объяснить себе свои цели и задачи;</li>
+        <li>упускает возможности, тратя время на бессмысленный сбор информации;</li>
+        <li>порождает безответственность и боязнь поражения;</li>
+        <li>без конца обсуждает свои планы и решения;</li>
+        <li>заставляет людей принимать решения на свой страх и риск.</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Ответственная команда</h4>
+      <ul>
+        <li>ставит чёткие задачи и цели;</li>
+        <li>объединяет всю команду;</li>
+        <li>развивает умение учиться на ошибках;</li>
+        <li>реализует возможности быстрее конкурентов;</li>
+        <li>решительно идёт вперёд;</li>
+        <li>меняет направление без колебаний и не испытывает чувства вины.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Упражнения</h3>
+  <div class="steps">
+    <div>
+      <h5>Подведение итогов</h5>
+      <p>В конце совещания сформулировать основные решения и договориться, что именно довести до сотрудников, клиентов и заинтересованных лиц. Часто выясняется, что решения поняты по-разному — и это нужно уточнить до того, как их начнут исполнять.</p>
+      <span class="time">10 минут</span>
+    </div>
+    <div>
+      <h5>Дедлайн</h5>
+      <p>Чёткий срок выработки решения — и поощрение тех, кто помог в него уложиться. Важны промежуточные дедлайны: они заставляют вовремя выявить и устранить несогласованность. Злейший враг такой команды — неопределённость.</p>
+    </div>
+    <div>
+      <h5>Анализ худшего сценария</h5>
+      <p>Рассмотреть вероятные последствия обсуждаемого решения, а затем — самый плохой вариант развития событий. Помогает понять, что любые последствия можно пережить и они не так страшны, как кажется.</p>
+    </div>
+    <div>
+      <h5>Приучение к риску</h5>
+      <p>Тренировка решительности в безопасных ситуациях: заставить себя принять решение без дополнительного анализа. Обычно оказывается, что оно не хуже того, которое приняли бы после длительного исследования.</p>
+    </div>
+  </div>
+
+  <div class="box lead-role">
+    <h4>Роль лидера</h4>
+    <p>Лидер должен отдавать себе отчёт, что команда может принять неправильное решение, — и всё равно подталкивать её к завершению обсуждения, задавать темп и следить за дедлайном. Чего лидер ни в коем случае не должен делать — <strong>поощрять фальшивое согласие и откладывание решений</strong>.</p>
+  </div>
+
+  <div class="box">
+    <h4>Связь с пороком 4</h4>
+    <p>Чтобы требовать друг от друга определённого поведения, нужно чётко понимать, чего от тебя ждут. Даже самые ответственные люди не станут спрашивать за то, что не было ясно сформулировано.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ ПОРОК 4 ============ -->
+<div class="case-hero" id="p4">
+  <img src="img/huddle-women.jpg" alt="Команда слушает тренера во время тайм-аута" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПОРОК 4</p>
+    <h2>Нетребовательность<br>к другим</h2>
+    <p class="hero-sub">Самый надёжный способ поддерживать высокую эффективность — взаимное давление. Не давление начальника.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">Требовательность в команде — это стремление добиваться от коллег определённых моделей поведения и порицать те, что могут нанести урон команде.</p>
+
+  <p>Нетребовательность объясняется желанием избежать дискомфорта, который возникает при попытке указать коллеге на его недочёты. Члены сильных команд преодолевают это естественное желание, предпочитая открытое, хоть и чреватое конфликтами общение.</p>
+
+  <div class="box warn">
+    <h4>Парадокс дружных команд</h4>
+    <p>Именно члены дружелюбных команд, особенно близкие друг другу, меньше всего стремятся к требовательности — не хотят портить добрые отношения. Это приводит к обратному результату: в итоге все начинают упрекать друг друга за то, что не оправдали надежд и утратили высокие стандарты.</p>
+    <p>Взаимная требовательность, наоборот, <em>улучшает</em> моральный климат: так люди демонстрируют уважение друг к другу.</p>
+  </div>
+
+  <blockquote>Именно боязнь подвести команду заставляет людей лучше работать.<cite>Патрик Ленсиони</cite></blockquote>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Нетребовательная команда</h4>
+      <ul>
+        <li>страдает от взаимных обид, когда одни работают хорошо, а другие плохо;</li>
+        <li>косвенно поддерживает посредственность;</li>
+        <li>срывает сроки и показатели;</li>
+        <li>взваливает всё бремя ответственности за дисциплину на лидера.</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Требовательная команда</h4>
+      <ul>
+        <li>воздействует на плохих работников, заставляя их исправиться;</li>
+        <li>быстро выявляет и решает назревающие проблемы;</li>
+        <li>создаёт атмосферу взаимоуважения, поскольку все работают с высокой эффективностью;</li>
+        <li>не допускает злоупотребления административными мерами.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Упражнения</h3>
+  <div class="steps">
+    <div>
+      <h5>Информирование о целях и стандартах</h5>
+      <p>Ясные цели, чётко распределённые обязанности, установленные стандарты поведения. Для требовательности нет ничего хуже неопределённости — и даже когда команда держит график, лидер должен постоянно напоминать о стандартах.</p>
+    </div>
+    <div>
+      <h5>Регулярный анализ ситуации</h5>
+      <p>Обязать членов команды регулярно оценивать, как каждый выполняет обязательства и стандарты — устно или письменно. Важно добиться, чтобы это делалось самостоятельно и добровольно.</p>
+    </div>
+    <div>
+      <h5>Командное вознаграждение</h5>
+      <p>Отказаться от премий за личные достижения в пользу командных. Тогда молча сносить низкую эффективность коллеги становится невыгодно: это может лишить премии всех.</p>
+    </div>
+  </div>
+
+  <div class="box lead-role">
+    <h4>Роль лидера</h4>
+    <p>Самое трудное — решиться передать полномочия взаимного контроля самой команде. Сильные лидеры, сами того не замечая, создают <strong>вакуум ответственности</strong>: выступая единственным борцом за дисциплину, они позволяют остальным спокойно закрывать глаза на нарушения.</p>
+    <p>Если культура взаимной требовательности создана, лидер оставляет себе роль высшего арбитра — на случаи, когда команда не может прийти к решению. И такие случаи должны быть исключением, а не правилом.</p>
+  </div>
+
+  <div class="box scene">
+    <h4>Сцена: история про Фреда</h4>
+    <p>Чтобы объяснить команде увольнение Майки, Кэтрин рассказала историю, которую не любит вспоминать. На первой руководящей должности у неё был подчинённый — назовём его Фред — расторопнее и смышлёнее всех. Остальные его терпеть не могли. Кэтрин выслушивала жалобы, но решила, что коллеги просто завидуют.</p>
+    <p>Отдел работал всё хуже, и она перекладывала на Фреда всё больше. Наутро после бессонной ночи она приняла первое важное управленческое решение.</p>
+    <p>— Вы уволили его, — предположил Джеф.<br>— Нет. <strong>Я повысила его в должности.</strong></p>
+    <p>Через две недели трое из семи аналитиков ушли. Начальник вызвал Кэтрин и на следующий день тоже принял важное управленческое решение — уволил её.</p>
+    <p>— Вы утверждаете, что поведение одного Фреда снизило производительность отдела вдвое?<br>— Нет, дело не в поведении Фреда. <em>Дело в моём отношении к его поведению. Меня уволили за дело.</em></p>
+  </div>
+
+  <div class="box">
+    <h4>Связь с пороком 5</h4>
+    <p>Если люди не радеют за общее дело, они уделяют больше внимания собственным делам и карьере. Именно с нетребовательности и отсутствия взаимного контроля начинается безразличие к общему результату.</p>
+  </div>
+</div>
+</section>
+
+<!-- ============ ПОРОК 5 ============ -->
+<div class="case-hero" id="p5">
+  <img src="img/rowing-race.jpg" alt="Гребная гонка" loading="lazy" style="object-position:center 30%">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">ПОРОК 5 · ВЕРШИНА</p>
+    <h2>Безразличие<br>к общему результату</h2>
+    <p class="hero-sub">Ни высокое доверие, ни конструктивные конфликты, ни требовательность не компенсируют отсутствия желания победить.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <p class="lead wide-lead">Речь не только о прибыли. Для корпорации конечное мерило — прибыль; для команды таким мерилом будет достижение целей, которые ставят перед ней лидеры.</p>
+
+  <p>Чтобы отслеживать свою эффективность, команда должна знать свои цели, критерии оценки и конечный результат. Но есть две вещи, на которых команды концентрируются вместо результата.</p>
+
+  <div class="grid2">
+    <div>
+      <h4 style="color:var(--red)">Статус команды</h4>
+      <p>Некоторым достаточно просто ощущать свою принадлежность к группе. Результат желателен, но без особых жертв. Этому особенно подвержены некоммерческие организации, политические движения, академические учреждения и престижные компании: они процветают за счёт принадлежности к числу особых.</p>
+    </div>
+    <div>
+      <h4 style="color:var(--red)">Личный статус</h4>
+      <p>Люди стремятся улучшить собственное материальное положение и продвинуться по карьерной лестнице в ущерб общим целям. Хорошая команда добивается того, чтобы коллективный результат стал для каждого важнее личных целей.</p>
+    </div>
+  </div>
+
+  <p>Порок кажется самым очевидным — и всё же очень многие команды не обращают внимания на результат. <em>Они живут и работают просто для того, чтобы жить и работать.</em></p>
+
+  <div class="duo">
+    <div class="bad">
+      <h4>Команда, которой безразличен результат</h4>
+      <ul>
+        <li>не развивается или деградирует;</li>
+        <li>редко побеждает конкурентов;</li>
+        <li>теряет амбициозных работников;</li>
+        <li>заставляет людей всё внимание уделять собственной карьере;</li>
+        <li>легко теряет направление и фокус.</li>
+      </ul>
+    </div>
+    <div class="good">
+      <h4>Команда, которая заботится о результате</h4>
+      <ul>
+        <li>сохраняет амбициозных работников;</li>
+        <li>минимизирует эгоистичное поведение;</li>
+        <li>любит успех и остро переживает неудачи;</li>
+        <li>выигрывает благодаря тем, кто ставит коллективные цели выше личных;</li>
+        <li>не теряет из виду цель.</li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Упражнения</h3>
+  <div class="steps">
+    <div>
+      <h5>Широкое информирование о результатах</h5>
+      <p>В спорте публично обещать победу опасно — это провоцирует соперника. В бизнесе всё наоборот: команды, публично взявшие обязательство достичь целей, приложат все усилия, чтобы не опозориться. Те, кто невнятно обещает «сделать всё возможное», подсознательно обрекают себя на поражение.</p>
+    </div>
+    <div>
+      <h5>Поощрение за результат, а не за усилия</h5>
+      <p>Увязать вознаграждение с достижением конкретных целей. Но одного этого мало: если премировать «за приложенные усилия» при отсутствии результата, команда понимает, что результат, в общем-то, не так уж важен.</p>
+    </div>
+  </div>
+
+  <div class="box lead-role">
+    <h4>Роль лидера</h4>
+    <p>Если члены команды поймут, что для лидера есть что-то более важное, чем результат, они воспримут это как разрешение поступать так же. Лидер должен быть бескорыстен и объективен и поощрять только тех, кто внёс реальный вклад в общие цели.</p>
+  </div>
+
+  <div class="box scene">
+    <h4>Сцена: семь критериев вместо плановых показателей</h4>
+    <p>Кэтрин разбила команду на группы по два-три человека и попросила составить перечень результатов, по которым можно судить об успехе — «только не надо включать туда плановые показатели».</p>
+    <p>За час набралось больше пятнадцати критериев; после объединения похожих осталось <strong>семь</strong>: доходы, расходы, привлечение новых клиентов, удовлетворение имеющихся, удержание сотрудников, знание рынка и качество продукта. Оценивать решили ежемесячно: раз в квартал — слишком редко, чтобы успеть вмешаться.</p>
+    <p>И тут же выяснилось главное. Мартин не смог ответить, как идут дела с пиаром: «Это работа Майки». Кэтрин привела спортивную аналогию — тренер, который в перерыве по очереди беседует с каждым игроком с глазу на глаз, а игроки не знают, о чём он говорил с остальными. Это не команда, это сборище единоличников.</p>
+    <p><em>«Каждый из вас отвечает за продажу — не только Джей-Ро. Вы все отвечаете за маркетинг — не только Майки. Вы все отвечаете за разработку продукта, работу с клиентами и финансы».</em></p>
+  </div>
+</div>
+</section>
+
+<!-- ============ АНКЕТА ============ -->
+<section id="anketa">
+<div class="wrap">
+  <p class="kicker">Диагностика</p>
+  <h2>Анкета из книги —<br>работающая прямо здесь</h2>
+  <p class="lead wide-lead">Пятнадцать утверждений из последней главы. Оцените по трёхбалльной шкале, насколько каждое подходит вашей команде. Отвечайте откровенно и быстро.</p>
+
+  <div class="box">
+    <h4>Как пользоваться</h4>
+    <p>Ленсиони настаивает: анкету должны заполнить <strong>все члены команды</strong>, затем все знакомятся с результатами, открыто обсуждают расхождения в ответах и делают выводы. Расхождение само по себе — уже материал для разговора.</p>
+    <p class="xs" style="margin-top:12px">Подсчёт идёт прямо в браузере, ничего никуда не отправляется и нигде не сохраняется.</p>
+  </div>
+
+  <div class="quiz" id="quiz">
+    <div class="q"><div class="qt"><span class="qn">01</span><span class="qx">Члены нашей команды горячо и открыто обсуждают любые вопросы и проблемы.</span></div>
+      <div class="opts" data-q="1"></div></div>
+    <div class="q"><div class="qt"><span class="qn">02</span><span class="qx">Члены нашей команды открыто критикуют друг друга за недостатки и непродуктивное поведение.</span></div>
+      <div class="opts" data-q="2"></div></div>
+    <div class="q"><div class="qt"><span class="qn">03</span><span class="qx">Члены нашей команды знают, над чем работают их коллеги и какой вклад они вносят в достижение общей цели команды.</span></div>
+      <div class="opts" data-q="3"></div></div>
+    <div class="q"><div class="qt"><span class="qn">04</span><span class="qx">Члены нашей команды искренне и сразу же приносят извинения, если им случается задеть кого-то из коллег или непреднамеренно нанести ущерб командной работе.</span></div>
+      <div class="opts" data-q="4"></div></div>
+    <div class="q"><div class="qt"><span class="qn">05</span><span class="qx">Члены нашей команды готовы пожертвовать чем-то — премией, славой, штатной единицей — ради блага всей команды.</span></div>
+      <div class="opts" data-q="5"></div></div>
+    <div class="q"><div class="qt"><span class="qn">06</span><span class="qx">Члены нашей команды открыто признают свои слабости и ошибки.</span></div>
+      <div class="opts" data-q="6"></div></div>
+    <div class="q"><div class="qt"><span class="qn">07</span><span class="qx">Совещания нашей команды очень интересны, на них никогда не бывает скучно.</span></div>
+      <div class="opts" data-q="7"></div></div>
+    <div class="q"><div class="qt"><span class="qn">08</span><span class="qx">Члены нашей команды после рабочей встречи уверены в том, что их коллеги полностью поддерживают принятые решения и будут их выполнять, даже если сначала не были согласны с ними.</span></div>
+      <div class="opts" data-q="8"></div></div>
+    <div class="q"><div class="qt"><span class="qn">09</span><span class="qx">Атмосфера в нашей команде в значительной степени зависит от успеха в достижении целей.</span></div>
+      <div class="opts" data-q="9"></div></div>
+    <div class="q"><div class="qt"><span class="qn">10</span><span class="qx">На совещаниях нашей команды непременно рассматриваются самые важные и самые трудные вопросы; по ним обязательно принимаются конкретные решения.</span></div>
+      <div class="opts" data-q="10"></div></div>
+    <div class="q"><div class="qt"><span class="qn">11</span><span class="qx">Члены нашей команды делают всё, чтобы не подвести своих коллег.</span></div>
+      <div class="opts" data-q="11"></div></div>
+    <div class="q"><div class="qt"><span class="qn">12</span><span class="qx">Члены нашей команды знают всё друг о друге и спокойно обсуждают нерабочие вопросы.</span></div>
+      <div class="opts" data-q="12"></div></div>
+    <div class="q"><div class="qt"><span class="qn">13</span><span class="qx">Члены нашей команды заканчивают обсуждение всех вопросов чёткими и ясными резолюциями.</span></div>
+      <div class="opts" data-q="13"></div></div>
+    <div class="q"><div class="qt"><span class="qn">14</span><span class="qx">Члены нашей команды контролируют выполнение планов и качество работы друг друга.</span></div>
+      <div class="opts" data-q="14"></div></div>
+    <div class="q"><div class="qt"><span class="qn">15</span><span class="qx">Члены нашей команды не хвастаются своими достижениями, но с удовольствием признают успехи коллег.</span></div>
+      <div class="opts" data-q="15"></div></div>
+
+    <div id="qresult">
+      <h4>Результат</h4>
+      <div id="qrows"></div>
+      <p class="qhint" id="qhint">Ответьте на все пятнадцать утверждений — счёт по каждому пороку появится здесь.</p>
+      <p style="margin-top:18px;margin-bottom:0"><button class="qbtn" id="qreset" type="button">Сбросить ответы</button></p>
+    </div>
+  </div>
+
+  <div class="tbl-scroll">
+    <table>
+      <thead><tr><th style="width:22%">Сумма по пороку</th><th style="width:26%">Что это значит</th><th>Что делать</th></tr></thead>
+      <tbody>
+        <tr><td><b>8–9</b></td><td>Этого порока у вас нет</td><td>Не расслабляться: даже лучшие коллективы неизбежно подвержены характерным порокам команды</td></tr>
+        <tr><td><b>6–7</b></td><td>Существует угроза развития</td><td>Взять соответствующие упражнения из раздела этого порока и поставить их в календарь</td></tr>
+        <tr><td><b>3–5</b></td><td>Надо срочно принимать меры</td><td>Начинать снизу пирамиды: пока нет доверия, работа над конфликтами и обязательностью бессмысленна</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- ============ ВРЕМЯ ============ -->
+<section id="vremya">
+<div class="wrap">
+  <p class="kicker">Фактор времени</p>
+  <h2>Восемь дней в квартал —<br>и это считается много</h2>
+
+  <div class="grid2">
+    <div>
+      <p>Кэтрин понимала, что члены сильной команды должны много времени проводить вместе: только так быстро устраняются межличностные проблемы и налаживается общение.</p>
+      <p>Её команда проводила на выездных совещаниях <strong>восемь дней в квартал</strong> — чуть меньше трёх дней в месяц. Ленсиони замечает: хоть это и немного, большинство команд топ-менеджеров не хотят проводить вместе даже столько времени, предпочитая заниматься, как они говорят, «настоящей работой».</p>
+      <blockquote style="font-size:clamp(19px,2.1vw,24px)">Каким бы сложным ни казалось создание сплочённой команды, на самом деле всё очень просто.<cite>Патрик Ленсиони, начало последней части книги</cite></blockquote>
+    </div>
+    <div>
+      <div class="steps" style="grid-template-columns:1fr;margin-top:0">
+        <div>
+          <h5>Годовое планирование</h5>
+          <p>Выработка плана на предстоящий год и рабочие встречи топ-менеджеров. Бюджет, стратегические цели, программы подготовки персонала, текущие вопросы.</p>
+          <span class="time">3 дня · выездное</span>
+        </div>
+        <div>
+          <h5>Ежеквартальные совещания</h5>
+          <p>Пересмотр глобальных целей, финансовый обзор, стратегия, производительность работников, назревшие проблемы, организация команд.</p>
+          <span class="time">2 дня · выездное</span>
+        </div>
+        <div>
+          <h5>Еженедельные встречи</h5>
+          <p>Промежуточные итоги, объёмы продаж, работа с клиентами, тактические и оперативные вопросы.</p>
+          <span class="time">2 часа · офис</span>
+        </div>
+        <div>
+          <h5>Планёрки и летучки</h5>
+          <p>Важные текущие вопросы, на которые не хватает времени на еженедельных встречах.</p>
+          <span class="time">2 часа · офис</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="full">
+    <figure>
+      <img src="img/napa-road.jpg" alt="Дорога вдоль виноградников долины Напа" loading="lazy">
+      <figcaption>Напу Кэтрин выбрала осознанно: достаточно близко, чтобы дорога не съедала день, и достаточно далеко от офиса, чтобы захотелось замедлить шаг. Отель — небольшой замок с конференц-залом на втором этаже и балконом с видом на виноградники.</figcaption>
+    </figure>
+  </div>
+</div>
+</section>
+
+<!-- ============ РАЗВЯЗКА ============ -->
+<div class="case-hero" id="finale">
+  <img src="img/chateau.jpg" alt="Винодельческое поместье в долине Напа" loading="lazy">
+  <div class="sh"></div>
+  <div class="in">
+    <p class="num">РАЗВЯЗКА</p>
+    <h2>Чем всё кончилось</h2>
+    <p class="hero-sub">Один человек ушёл, один сам попросил о понижении, а компания отказалась продаваться.</p>
+  </div>
+</div>
+
+<section>
+<div class="wrap">
+  <h3>Уход Майки</h3>
+  <p>Кэтрин не уволила её. Она сказала: «А я и не увольняю вас. И вам не придётся уходить. Но вам придётся полностью изменить своё поведение. И как можно скорее». И добавила: «Хотя, честно говоря, не думаю, что вам этого хочется».</p>
+  <p>Майки ушла, выторговав выходное пособие. А реакция команды застала Кэтрин врасплох: вместо облегчения — тревога. Джен сказала: «Конечно, Майки была с характером, но ведь она отлично работала. Может, нам следовало проявить больше терпения?» Именно тогда Кэтрин рассказала историю про Фреда.</p>
+
+  <div class="box scene">
+    <h4>Проверка на прочность</h4>
+    <p>Через три месяца выяснилось, что компания Green Banana — та самая, которую DecisionTech сама хотела купить, — теперь хочет купить их. Предложение было «намного больше, чем мы стоим на самом деле». Совет директоров отказался решать за команду.</p>
+    <p>Первым заговорил Мартин — тот самый молчаливый технический директор с ноутбуком: <em>«К чёрту! Я ни за что не откажусь от нашей команды и не продамся компании с недозрелым названием!»</em></p>
+    <p>Джеф объяснил позицию совета: «Они хотят посмотреть, хватит ли у нас духу постоять за себя. Хотят знать, хотим ли мы остаться собой. Может, у нас кишка тонка».</p>
+    <p>Проголосовали против все. Джен закрыла обсуждение фразой: «Нет зелёным бананам!»</p>
+  </div>
+
+  <h3>Результат</h3>
+  <p>В следующем году DecisionTech значительно увеличила объём продаж и достигла запланированных показателей прибыли <strong>за три квартала вместо четырёх</strong>. Наряду с ростом производительности компания продемонстрировала резкое снижение текучести персонала и улучшение морального климата — при том что был период, пусть и кратковременный, значительного спада.</p>
+  <p>Показательна деталь: в этот период не только подчинённые подбадривали Кэтрин, но и председатель совета лично звонил, чтобы поддержать её и отметить прогресс в формировании команды.</p>
+
+  <div class="box">
+    <h4>Финальный жест</h4>
+    <p>Когда в компании стало больше 250 человек, Кэтрин решила сократить число подчиняющихся ей напрямую: «чем крупнее компания, тем меньше должно быть руководящее звено». Джеф Шенли — основатель, бывший CEO и член совета директоров — перешёл в подчинение к Нику.</p>
+    <p>Команда была потрясена: «Вы понимаете, какой это удар для Джефа? Получается, что его просто понизили в должности».</p>
+    <p>Кэтрин ответила: <strong>«Ребята, это была идея самого Джефа»</strong>. Он сказал, что так будет лучше и для компании, и для команды.</p>
+  </div>
+
+  <div class="ba">
+    <figure>
+      <img src="img/beringer.jpg" alt="Винодельня в долине Напа" loading="lazy">
+      <figcaption>К последнему выезду в Напу участники стали садиться в кафе за один стол, а не разбредаться по углам, — для Кэтрин это был верный признак улучшения.</figcaption>
+    </figure>
+    <figure>
+      <img src="img/halfmoon-waves.jpg" alt="Волны у побережья Халф-Мун-Бей" loading="lazy">
+      <figcaption>«Странно, но теперь участники совещания редко вспоминали о принципах командной работы». Метод перестал быть темой и стал привычкой.</figcaption>
+    </figure>
+  </div>
+
+  <blockquote>Я видела много команд, которые скатились к прежнему состоянию, добившись гораздо более впечатляющих успехов.<cite>Кэтрин — команде, которая только что себя похвалила</cite></blockquote>
+</div>
+</section>
+
+<!-- ============ 11 СЕНТЯБРЯ ============ -->
+<section id="sept">
+<div class="wrap">
+  <p class="kicker">Особые случаи</p>
+  <h2>Команды, у которых<br>на кону чужая жизнь</h2>
+
+  <div class="grid2">
+    <div>
+      <p>Ленсиони заканчивал книгу, когда произошли события 11 сентября 2001 года. Абстрагируясь от ужаса трагедии, он посчитал нужным описать действия спасателей как пример командной работы.</p>
+      <p>Пожарные бригады, скорая помощь, полиция Нью-Йорка, Вашингтона и Пенсильвании показали, что группы людей, действующих согласованно, способны достигать результатов, недоступных группам без командного духа.</p>
+      <p>Логика та же, что и во всей книге, только доведённая до предела. Эти люди проводят вместе очень много времени — и между ними возникают <strong>узы доверия едва ли не крепче семейных</strong>. Это позволяет принимать правильное решение, когда дорога́ каждая секунда. Они не раздумывая бросятся на помощь коллеге — и от него потребуют того же, ведь на кону жизнь. И всех объединяет одна общая цель.</p>
+      <p class="small dim">«Главный тест для команды — общий результат. Если учесть десятки тысяч спасённых в Нью-Йорке и Пентагоне, нет никаких сомнений, что команды, которые действовали там, невзирая на смертельный риск, были не просто отличными — они были великими».</p>
+    </div>
+    <div>
+      <figure>
+        <img src="img/nyfd-chief.jpg" alt="Пожарные Нью-Йорка на месте разбора завалов, сентябрь 2001" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        <figcaption>Нью-Йорк, сентябрь 2001. Пять пороков модели читаются здесь наоборот: доверие, прямота, обязательность, взаимный спрос и общая цель.</figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ ПРИНЦИПЫ ============ -->
+<section id="principy">
+<div class="wrap">
+  <p class="kicker">Что забрать себе</p>
+  <h2>Десять выводов<br>без беллетристики</h2>
+
+  <div class="steps">
+    <div><h5>Начинайте снизу</h5><p>Пирамида читается только в одном направлении. Работать над конфликтами и обязательностью, пока нет доверия, — потеря времени.</p></div>
+    <div><h5>Доверие — это уязвимость, а не надёжность</h5><p>Не «я уверен, что он справится», а «я не боюсь при нём ошибиться и попросить о помощи».</p></div>
+    <div><h5>Отсутствие споров — симптом, а не достижение</h5><p>Именно по тишине на совещаниях Кэтрин поставила диагноз. Тихие совещания означают, что настоящий разговор идёт где-то ещё.</p></div>
+    <div><h5>Спорьте об идеях, а не о людях</h5><p>Накал, эмоции и повышенный тон допустимы. Переход на личные качества — нет.</p></div>
+    <div><h5>Достаточно быть услышанным</h5><p>Разумный человек не требует, чтобы приняли именно его предложение. Ему нужно, чтобы его выслушали и поняли. Единогласие — ложная цель.</p></div>
+    <div><h5>Любое действие лучше его отсутствия</h5><p>Лучше принять смелое решение, ошибиться и столь же смело изменить его, чем упускать возможности в ожидании полноты информации.</p></div>
+    <div><h5>Подводите итог вслух</h5><p>Десять минут в конце встречи на формулировку решений и договорённость, что именно донести до сотрудников. Часто выясняется, что все поняли по-разному.</p></div>
+    <div><h5>Требовательность — коллективная, не начальственная</h5><p>Если единственный борец за дисциплину — лидер, возникает вакуум ответственности, и остальные закрывают глаза на нарушения.</p></div>
+    <div><h5>Отвечают все за всё</h5><p>Вы все отвечаете за продажи, маркетинг и продукт — не только их руководители. Иначе это не команда, а сборище единоличников.</p></div>
+    <div><h5>Лидер идёт первым</h5><p>Первым показывает уязвимость, первым не уходит от конфликта, первым ставит результат выше собственного статуса. Всё остальное команда считывает с него.</p></div>
+  </div>
+
+  <blockquote style="margin-top:52px">Секрет успеха кроется не в овладении обширной теоретической базой, а в сочетании здравого смысла с высочайшим уровнем дисциплинированности и настойчивости.<cite>Патрик Ленсиони, «Вывод»</cite></blockquote>
+</div>
+</section>
+
+<!-- ============ СЛОВАРЬ ============ -->
+<section id="slovar">
+<div class="wrap">
+  <p class="kicker">Словарь</p>
+  <h2>Термины без жаргона</h2>
+
+  <div class="terms">
+    <div><dl><dt>Уязвимость</dt><dd>Готовность показать слабости, отсутствие навыков, ошибки и открыто попросить о помощи. Фундамент доверия по Ленсиони.</dd></dl></div>
+    <div><dl><dt>Доверие</dt><dd>Убеждённость в том, что действия коллег диктуются благими намерениями, поэтому не надо защищаться.</dd></dl></div>
+    <div><dl><dt>Конструктивный конфликт</dt><dd>Спор об идеях и концепциях, а не о личных качествах. Цель — найти оптимальное решение за кратчайший срок.</dd></dl></div>
+    <div><dl><dt>Фальшивое согласие</dt><dd>Единогласное решение, которое никого не устраивает и ни к чему не ведёт. Возникает там, где боятся спорить.</dd></dl></div>
+    <div><dl><dt>Обязательность</dt><dd>Продукт двух составляющих: определённости и безоговорочной поддержки принятого решения — включая тех, кто был против.</dd></dl></div>
+    <div><dl><dt>Требовательность</dt><dd>Стремление добиваться от коллег определённого поведения и порицать то, что вредит команде. Взаимная, а не спускаемая сверху.</dd></dl></div>
+    <div><dl><dt>Вакуум ответственности</dt><dd>Ситуация, когда лидер — единственный борец за дисциплину, и потому все остальные от этой борьбы самоустраняются.</dd></dl></div>
+    <div><dl><dt>«Подрывник»</dt><dd>Человек, выбранный или назначенный вытаскивать на свет скрытые разногласия и заставлять команду их обсуждать.</dd></dl></div>
+    <div><dl><dt>Личные истории</dt><dd>Упражнение на полчаса: несколько неличных вопросов о жизни каждого. Самый быстрый способ увидеть в коллеге человека.</dd></dl></div>
+    <div><dl><dt>Подведение итогов</dt><dd>Десять минут в конце встречи: сформулировать решения и договориться, что довести до сотрудников, а что оставить конфиденциальным.</dd></dl></div>
+    <div><dl><dt>Статус команды</dt><dd>Ситуация, когда людям достаточно принадлежать к группе, а результат желателен «без особых жертв». Частая болезнь престижных организаций.</dd></dl></div>
+    <div><dl><dt>Пять добродетелей</dt><dd>Зеркальное отражение модели: доверяют, спорят, поддерживают решения, спрашивают друг с друга, нацелены на общий результат.</dd></dl></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ ИСТОЧНИКИ ============ -->
+<section id="istochniki" style="border-bottom:0">
+<div class="wrap">
+  <p class="kicker">Источники</p>
+  <h2>Откуда взят материал</h2>
+
+  <div class="grid2">
+    <div>
+      <h3 style="margin-top:8px">Первоисточник</h3>
+      <p>Патрик Ленсиони. <strong>«Пять пороков команды. Бизнес-роман»</strong> / пер. с англ. И. Э. Коротенко. — 3-е изд. — М.: Манн, Иванов и Фербер, 2016. — 256 с. ISBN 978-5-00100-204-8. Оригинал: Patrick Lencioni, <em>The Five Dysfunctions of a Team: A Leadership Fable</em> (Jossey-Bass, 2002).</p>
+      <p class="small dim">Разбор построен на полном тексте книги: предисловие автора, четыре части романа (Проблемы, Конфликт, Трудный подъём, Сплочение) и пятая часть — «Модель», где Ленсиони даёт развёрнутое описание пороков, упражнения, анкету и раздел о роли лидера. Все цитаты приведены по русскому изданию.</p>
+
+      <h3>Что осталось за рамками</h3>
+      <ul class="small">
+        <li>Подробности сюжетных линий второстепенных персонажей и внутренние монологи Кэтрин.</li>
+        <li>Сцены совещаний в офисе между выездами в Напу (часть III «Трудный подъём») — они иллюстрируют те же принципы.</li>
+        <li>Благодарности, сведения об авторе и рекламные страницы издательства.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="box" style="margin-top:8px">
+        <h4>Как читался материал</h4>
+        <p>Текст извлечён из PDF (252 страницы), очищен от колонтитулов и номеров страниц и разобран по структуре. Отдельно выделены: полная модель из части V со всеми упражнениями и списками, анкета из пятнадцати вопросов с ключом подсчёта, ключевые сцены романа и прямые реплики персонажей.</p>
+        <p>Фотографии подобраны к конкретным местам действия и метафорам книги: долина Напа, побережье Халф-Мун-Бей, Сэнд-Хилл-роуд, гребная восьмёрка («каждый гребёт в свою сторону»), командные тайм-ауты, спасатели Нью-Йорка. Все изображения — Wikimedia Commons, в общественном достоянии или под лицензиями Creative Commons.</p>
+      </div>
+      <div class="box warn">
+        <h4>Оговорка</h4>
+        <p>DecisionTech, Кэтрин Питерсен и остальные персонажи <strong>вымышлены</strong> — это бизнес-роман, а не хроника. Ленсиони прямо пишет, что рассказ о вымышленной организации нужен, чтобы читатель поставил себя на место героев. Поэтому «результаты» DecisionTech — часть притчи, а не измеренный кейс.</p>
+        <p>Фотографии иллюстрируют места действия и метафоры книги; на них нет героев романа и нет самой компании.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+  <h4 style="margin-bottom:18px">Фотографии</h4>
+  <p class="xs" style="max-width:70ch;margin-bottom:24px">Все изображения — Wikimedia Commons. Указаны автор и лицензия; ссылка ведёт на страницу файла с полными условиями использования.</p>
+  <div class="credits">
+    <div style="break-inside:avoid;margin-bottom:9px">Автомобильный конвейер — Marek Ślusarczyk (Tupungato) Photo portfolio. <a href="https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg" target="_blank" rel="noopener">CC BY 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Виноградники Напы — Fred Hsu on en.wikipedia. <a href="https://commons.wikimedia.org/wiki/File:NorCal2018_-002_Wine_Country_Napa_Valley_Vineyard_-_Domaine_Carneros_-S0411044.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Винодельня Beringer, Напа — Jim G from Silicon Valley, CA, USA. <a href="https://commons.wikimedia.org/wiki/File:Beringer_Vineyards,_Napa_Valley,_California,_USA_(8309413934).jpg" target="_blank" rel="noopener">CC BY 2.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Винодельческое поместье в Напе — Gear$Head. <a href="https://commons.wikimedia.org/wiki/File:Chateau_Montelena.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Волны у Халф-Мун-Бей — Josh Dobson from UK. <a href="https://commons.wikimedia.org/wiki/File:Half_Moon_Bay_Crashing_Waves_(5148778631).jpg" target="_blank" rel="noopener">CC BY 2.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Гребная восьмёрка — Johnston, Frances Benjamin, 1864-1952, photographer. <a href="https://commons.wikimedia.org/wiki/File:An_eight-oared_shell_boat_and_crew-race_between_Harvard_University_and_Cambridge_(England)_University,_Cambridge,_Mass._LCCN96513663.jpg" target="_blank" rel="noopener">Public domain</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Гребная гонка — The Library of Congress. <a href="https://commons.wikimedia.org/wiki/File:Yale_and_Harvard_meet_in_their_annual_boat_race_at_New_London_this_week_LOC_3707358200.jpg" target="_blank" rel="noopener">No restrictions</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Долина Напа — ^demon. <a href="https://commons.wikimedia.org/wiki/File:Napa_Valley,_March_2011.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Дорога вдоль виноградников — Fred Hsu on en.wikipedia. <a href="https://commons.wikimedia.org/wiki/File:NorCal2018_-005_Wine_Country_-_Random_Napa_Valley_Vineyard_on_the_side_of_a_road_-S0292033.jpg" target="_blank" rel="noopener">CC BY-SA 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Побережье Халф-Мун-Бей — MARELBU. <a href="https://commons.wikimedia.org/wiki/File:Half_Moon_Bay,_CA_(San_Matteo_Coast)_-_panoramio.jpg" target="_blank" rel="noopener">CC BY 3.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Пожарные Нью-Йорка, сентябрь 2001 — Navy photo by Petty Officer 1st Class Preston Keres. <a href="https://commons.wikimedia.org/wiki/File:NYFD_Deputy_Chief_Joseph_Curry_at_the_WTC_on_2001-09-14.jpg" target="_blank" rel="noopener">Public domain</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Пустая переговорная — Breather breather. <a href="https://commons.wikimedia.org/wiki/File:Chairs_in_a_meeting_room_(Unsplash).jpg" target="_blank" rel="noopener">CC0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Разговор команды на тайм-ауте — &amp;DC from Coulsdon, Gtr London, United Kingdom. <a href="https://commons.wikimedia.org/wiki/File:Australian_Team_Talk_-_London_2012_Olympics_Womens_Basketball_(Australia_v_Russia).jpg" target="_blank" rel="noopener">CC BY 2.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Сэнд-Хилл-роуд — Coolcaesar. <a href="https://commons.wikimedia.org/wiki/File:Sand_Hill_Road_Eastbound_View.jpg" target="_blank" rel="noopener">CC BY-SA 4.0</a></div>
+    <div style="break-inside:avoid;margin-bottom:9px">Тайм-аут баскетбольной команды — kris krüg from Vancouver, Canada. <a href="https://commons.wikimedia.org/wiki/File:Team_Huddle_With_Coach_K_(2752766836).jpg" target="_blank" rel="noopener">CC BY-SA 2.0</a></div>
+  </div>
+  <p class="xs" style="margin-top:40px;padding-top:24px;border-top:1px solid var(--line)">
+    Разбор книги Патрика Ленсиони «Пять пороков команды» (МИФ, 2016).<br>
+    Некоммерческий образовательный конспект. Права на книгу принадлежат правообладателям.
+  </p>
+</div>
+</footer>
+
+<script>
+/* группировка абзацев в .prose — для двухколоночной вёрстки при печати */
+(function(){
+  document.querySelectorAll('section > .wrap').forEach(function(w){
+    var run=null;
+    Array.prototype.slice.call(w.children).forEach(function(el){
+      var t=el.tagName;
+      var prose=(t==='P'||t==='UL'||t==='OL'||t==='H3')
+        && !el.classList.contains('lead') && !el.classList.contains('kicker');
+      if(prose){
+        if(!run){run=document.createElement('div');run.className='prose';w.insertBefore(run,el);}
+        run.appendChild(el);
+      } else { run=null; }
+    });
+  });
+})();
+
+/* прогресс чтения */
+(function(){
+  var bar=document.getElementById('prog');
+  function upd(){
+    var h=document.documentElement, max=h.scrollHeight-h.clientHeight;
+    bar.style.width=(max>0?(h.scrollTop/max*100):0)+'%';
+  }
+  addEventListener('scroll',upd,{passive:true});
+  addEventListener('resize',upd);
+  upd();
+})();
+
+/* анкета */
+(function(){
+  var LABELS=[['3','всегда'],['2','иногда'],['1','редко']];
+  var GROUPS=[
+    {name:'Порок 1. Взаимное недоверие', qs:[4,6,12]},
+    {name:'Порок 2. Уход от конфликтов', qs:[1,7,10]},
+    {name:'Порок 3. Необязательность', qs:[3,8,13]},
+    {name:'Порок 4. Нетребовательность к другим', qs:[2,11,14]},
+    {name:'Порок 5. Безразличие к общему результату', qs:[5,9,15]}
+  ];
+  var opts=document.querySelectorAll('#quiz .opts');
+  if(!opts.length) return;
+  opts.forEach(function(box){
+    var q=box.getAttribute('data-q');
+    LABELS.forEach(function(pair){
+      var l=document.createElement('label');
+      l.innerHTML='<input type="radio" name="q'+q+'" value="'+pair[0]+'"><span>'+pair[0]+' — '+pair[1]+'</span>';
+      box.appendChild(l);
+    });
+  });
+  var rows=document.getElementById('qrows'), hint=document.getElementById('qhint');
+  function verdict(s){
+    if(s>=8) return ['ok','этого порока у вас нет'];
+    if(s>=6) return ['mid','существует угроза развития'];
+    return ['bad','надо срочно принимать меры'];
+  }
+  function calc(){
+    var answered=0, html='';
+    GROUPS.forEach(function(g){
+      var sum=0, full=true;
+      g.qs.forEach(function(n){
+        var el=document.querySelector('input[name="q'+n+'"]:checked');
+        if(el){ sum+=parseInt(el.value,10); answered++; } else full=false;
+      });
+      if(full){
+        var v=verdict(sum);
+        html+='<div class="res-row '+v[0]+'"><div class="res-name">'+g.name+'</div>'+
+              '<div class="res-score">'+sum+'</div><div class="res-verdict">'+v[1]+'</div></div>';
+      } else {
+        html+='<div class="res-row"><div class="res-name">'+g.name+'</div>'+
+              '<div class="res-score" style="color:#c7bca7">—</div><div class="res-verdict">нет всех ответов</div></div>';
+      }
+    });
+    rows.innerHTML=html;
+    hint.textContent = answered===15
+      ? 'Готово. Ленсиони советует дать анкету всей команде и обсудить именно расхождения в ответах.'
+      : 'Отвечено ' + answered + ' из 15. Счёт по пороку появляется, когда заполнены все три его утверждения.';
+  }
+  document.getElementById('quiz').addEventListener('change',calc);
+  document.getElementById('qreset').addEventListener('click',function(){
+    document.querySelectorAll('#quiz input[type=radio]').forEach(function(i){i.checked=false;});
+    calc();
+  });
+  calc();
+})();
+</script>
+</body>
+</html>
